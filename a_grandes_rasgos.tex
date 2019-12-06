@@ -1,0 +1,217 @@
+\documentclass[a4paper,11pt]{article}
+%\documentclass[a4paper,11pt,twocolumn]{article}
+%\documentclass[a4paper,11pt,landscape,twocolumn]{article}
+%\documentclass[a4paper]{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, es-tabla, es-nodecimaldot]{babel}
+\usepackage{amsmath}  %permite usar \text{} en el entorno Matemática
+\usepackage{amssymb} % para el de números reales
+%\usepackage{fancyhdr} %para encabezados y pies de página lindos
+%\usepackage{lastpage} %para poder referenciar el número de la última página
+\usepackage{graphicx} %para insertar gráficos
+\usepackage{float} %para que funcione el H de la posición de las figuras
+%\usepackage{chngpage} %para cambiar márgenes temporalmente. Por ejemplo tabla o figura un poco más grande que el text width
+%\usepackage[format=plain, indention=0cm, font=small, labelfont=bf, labelsep=period, textfont=sl]{caption} %tuneado del caption de las figuras
+\usepackage{mathtools} % para usar dcases, la versión displayMath de cases (funciones partidas)
+\usepackage{enumerate} %para personalizar los enumeradores
+\usepackage{framed} %para poner párrafos adentro de un caja con marco
+%\usepackage{hyperref} %para que el índice tenga enlaces internos
+%\usepackage{lastpage} %para poder referenciar el número de la última página
+%\usepackage{fullpage}
+%\usepackage[cm]{fullpage}
+\usepackage{wrapfig} %para poner tablas o figuras con texto alrededor.
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{epigraph}
+\usepackage{wrapfig} %para poner tablas o figuras con texto alrededor.
+
+\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+
+%\setlength{\columnseprule}{0.5pt}
+\setlength{\columnsep}{1cm}
+
+\setlength{\epigraphwidth}{.38\textwidth}
+%\setlength{\epigraphwidth}{0.7\textwidth}
+
+
+
+
+
+\title{A grandes rasgos}
+\author{G. Sebastián Pedersen --- sebasped@gmail.com}
+\date{Versión 1: 6-Ago a 6-Ago-2019\\
+Versión 2: 19-Oct a 20-Oct-2019}
+
+
+\renewcommand{\arraystretch}{1.3}  %para que las celdas de las tablas sean un poco más altas y entre bien el Q moño.
+\begin{document}
+\maketitle
+%\epigraph{Either mathematics is too big for the human mind, or the human mind is more than a machine.}{Confucio (551-479 a.C.)}	
+
+%\noindent Autor: G. Sebastián Pedersen --- sebasped@gmail.com --- Lun 05-Ago-2019.
+
+%\begin{framed}
+%	\noindent Los cálculos deben ir acompañados de explicaciones escritas que aclaren su significado. Un resultado suelto, no acompañado de explicación se considerará como problema no resuelto.
+%\end{framed}
+%\vspace{-0.5cm}
+\section{El primer problema}
+Algo así como a finales del siglo XIX surgieron en Matemática ciertos problemas a raíz, esencialmente, del paper de George Cantor ``Contributions to the Founding of the Theory of Transfinite Numbers''. En este Cantor introduce la teoría de conjuntos, y a partir de sus definiciones es que Bertrand Russell deduce contradicciones (paradojas las llama).
+
+Estas paradojas alarman a la comunidad Matemática y disparan varias alternativas para remediar este problema de los fundamentos de la Matemática. El Logicismo de Russell es uno, y la axiomatización-algebrización de Hilbert es otro. Hay más (constructivista, bla bla) pero de menor popularidad. Todo esto tipo principios del siglo XX.
+
+\section{La propuesta de Hilbert}
+La propuesta de Hilbert (1920 aprox.), que por su influencia es la que la comunidad Matemática encara, es construir un sistema axiomático que mediante reglas de deducción (aquí el tinte algebrista) se pueda deducir toda la Matemática, y este sistema debe ser consistente, completo y decidible.
+
+\section{Los problemas de la propuesta de Hilbert}
+Gödel (1935) prueba su famoso teorema de incompletitud, y da por tierra con la propuesta de Hilbert.
+
+Igual de importante, también prueba que la consistencia de un sistema no puede ser probado como teorema dentro del sistema, con lo cual aún resignando completitud no se llega a algo satisfactorio.
+
+El tema de decibilidad es tomado por Turing, que también llega a resultados no satisfactorios según la propuesta de Hilbert.
+
+\section{Las consecuencias de la propuesta de Hilbert}
+La adopción del fomalismo axiomático es claramente la más importante. A raíz de esto quedan axiomatizadas teorías que, dados los teoremas de Gödel, lo mejor que son es que no se le conocen al momento inconsistencias (ejemplo concreto: ZF conjuntos).
+
+Como subproducto y consecuencia al mismo tiempo es la independencia de algunos axiomas respecto de ciertas teorías. Por ejemplo el axioma de elección respecto de ZF, o de la potencia del continuo respecto de aritmética transfinita, o la equivalencia de existencia de conjuntos no medibles con el axioma de elección.
+
+Lo que se hace ahora es embeber una teoría dentro de otra, y probar consistencia de la más chica desde la más grande. Es muy común embeber dentro de ZF o ZFA.
+
+
+\section{Las cuestiones pendientes}
+\begin{itemize}
+	\item ¿La adopción del formalismo axiomático deja a la Matemática mejor parada que antes respecto a lo que quería puntualmente solucionar?
+	\item ¿La adopción del formalismo axiomático mejora o empeora en términos generales a la Matemática (concepción, comunicación, presentación, transmisión, enseñanza, claridad, relación con otras disciplinas, etc.)?
+	\item ¿La adopción del formalismo axiomático tuvo como consecuencia la adopción del modelo definición-teorema-demostración para la comunicación, transmisión y/o concepción de la Matemática?
+	\item ¿La adopción del formalismo axiomátivo tuvo como consecuencia el alejamiento de la Matemática de la Física, Biología, Geometría, etc?
+\end{itemize}
+
+
+\section{Cómo y/o qué seguir investigando}
+\begin{itemize}
+	\item Libros de Matemática viejos. Algo así como 3 períodos: antes del 1900, entre 1890 y 1920, luego de 1920. Probablemente antes del 1900 pero después de 1700 ponele.
+	\item Libros clásicos de análisis, álgebra, etc. Identificar bien si son libros de estudio, de volcado de state of the arte, o con una razón particular (tipo el de Hilbert para axiomatizar la geometría).
+	\item Probablemente se pueda segmentar el campos (análisis, álgebra, probabilidades). Aunque tal vez esto sea un sesgo de la modernidad.
+	
+\end{itemize}
+
+
+\section{Cosas descolgadas pero relacionadas}
+\subsection{Tres argumentos a favor de que la verdad Matemática puede pensarse con la misma validez que las de las ciencias experimentales}
+\begin{itemize}
+	\item Gauss dio 3 demostraciones del Teo fundamental del Álgebra. Ninguna sería hoy en día aceptada como paper.
+	\item La definición de continuidad en una variable real no es coherente con las siguientes abstracciones a espacios métricos y topológicos (y probablemente a varias variables reales y complejas). Por lo tanto una función es y no es continua, dependiendo del libro, de la definición, del lugar en la carrera, etc.
+	\item La teo conjuntos ZF axiomática no es que sea consistente, sino que no se le encuentran contradicciones. A medida que se le fueron encontrando se fueron agregando axiomas para zafarlas. Luego un teorema en esa teoría bien puede no serlo.
+	
+	Por otro lado ZF es indep del AC, y luego ZF+AC o ZF+$\neg$AC son igual de válidas.
+\end{itemize}
+
+\subsection{Separar el tema de la verdad sobre la escritura de la Matemática}
+Creo que es interesante y necesario separar las discusiones de la fundamentación de la Matemática (y su evolución hacia la verdad Matemática), por sobre la forma de escribir, transmitir, enseñar Matemática. Aunque relacionadas, la hipótesis es que la primera implicó cambios en la segunda.
+
+
+\subsection{Charla ``IA con responsabilidad social''}
+Charla del DC, Vie 06-Dic-2019 15 a 16.45 hs.
+
+\paragraph{Anuncio de la charla: } Hola a todos y todas,
+
+el próximo viernes 6 de diciembre a las 15 hs. en lugar a confirmar, tenemos el honor de tener en el Departamento de Computación a Verónica Dahl, quien dará una charla titulada "AI for Social Responsibility: Embedding principled guidelines into AI systems".
+
+Abajo biografía de Verónica y abstract de la charla. La charla estará dada en español.
+
+Cuando termine la charla, Verónica estará disponible para charlar informalmente sobre inferencia gramatical. Verónica está trabajando con lenguajes de bajos recursos como el Yor'ub'a (un lenguaje tonal africano) y el Ch’ol (una lengua maya hablada en México) y está interesada en trabajar con lenguas originarias de Argentina.
+
+
+Bio: Verónica Dahl is an Argentine/Canadian mother, computer scientist, musician, and writer. She co-founded the Logic Programming field with 14 other scientists, and made pioneering contributions to human languages processing, computational molecular biology, constraint programming and knowledge-based systems. She received numerous awards for her scientific results in AI, and three first prizes for her literary work. Her research program is supported by NSERC. Her greatest scientific ambition is to help bridge the gap between the formal and the humanistic sciences, for a more balanced and ethical world.
+
+Charla: AI for Social Responsibility: Embedding principled guidelines into AI systems
+
+In this position talk we briefly retrace the historic and evolutionary context that led to AI's results not necessarily being used first and foremost to benefit the public that funded it, nor to necessarily focus on human values and concerns.
+
+Next, we discuss how the AI language Constraint Handling Rules -CHR- can promote social responsibility by making it easy to embed principled guidelines into our systems, and we exemplify this idea within an application to enhance voting and decision-making power.
+
+Finally, we examine the very notion of intelligence in the light of the more recent notion of group intelligence, and draw consequences on what might be needed to ensure that AI capabilities are put to socially responsible uses only. In particular, we identify what legislations might help place AI at the service of the urgently needed solutions for today's various crises, with the overall aim, as K. Raworth put it, to "meet the needs of all within the means of the planet".
+\begin{thebibliography}{99}
+
+
+
+\bibitem{}
+Cantor, George; \emph{Contributions to the Founding of the Theory of Transfinite Numbers};
+%\url{http://www.ams.org/notices/199704/arnold.pdf}\\
+%AMS Notices, 1991.
+
+\bibitem{}
+Gödel, Kurt; \emph{Collected Works: Volume I: Publications 1929-1936};\\
+%\url{http://www.ams.org/notices/199704/arnold.pdf}\\
+Collected Works (Oxford), 1st ed.
+
+\bibitem{}
+Turing, Alan; \emph{On computable numbers, with an application to the entscheidungsproblem};\\
+\url{www.cs.ox.ac.uk/activities/ieg/e-library/sources/tp2-ie.pdf}\\
+1936.
+
+\bibitem{}
+Karpenkov, Oleg; \emph{Vladimir Igorevich Arnold};\\
+\url{https://arxiv.org/pdf/1007.0688v1.pdf}
+%Cengage Learning, 7 ed., 2012.\\
+%Secciones 17.1 y 17.2
+
+\bibitem{}
+Arnold, Vladimir Igorevich; \emph{On teaching mathematics};\\
+\url{https://www.uni-muenster.de/Physik.TP/~munsteg/arnold.html}
+
+\bibitem{}
+S. H. Lui; \emph{An Interview with Vladimir Arnold};\\
+\url{http://www.ams.org/notices/199704/arnold.pdf}\\
+AMS Notices, 1991.
+
+\bibitem{}
+Berlinghoff, William P.; Fernando Q. Gouvêa; \emph{Math Through the Ages: A Gentle History for Teachers and Others};\\
+%\url{http://calculusmadeeasy.org/}\\
+Expanded Edition, Oxton House and MAA, 2004. 
+
+\bibitem{}
+Dunham, William; \emph{Journey Through Genius: The Great Theorems of Mathematics};\\
+%\url{http://calculusmadeeasy.org/}\\
+Penguin, 1990. 
+
+\bibitem{}
+Katz, Victor J.; \emph{A History of Mathematics: An Introduction};\\
+%\url{http://calculusmadeeasy.org/}\\
+3rd. ed., Addison-Wesley, 2009.
+
+\bibitem{}
+Boyer, Carl B.; (revised by) Uta Merzbach; \emph{A History of Mathematics};\\
+%\url{http://calculusmadeeasy.org/}\\
+New York: John Wiley, 2nd ed., 1989
+
+
+
+\bibitem{}
+Thompson, Silvanus P.; \emph{Calculus made easy};\\
+\url{http://calculusmadeeasy.org/}\\
+1910.
+
+\bibitem{}
+Wolfram, Conrad; \emph{Computer based math};\\
+\url{https://computerbasedmath.org/}
+
+\bibitem{}
+García, Rolando; \emph{¿Hacia dónde van las universidades?};\\
+\url{https://bibliotecadigital.exactas.uba.ar/download/libro/libro_n0006_RolandoGarcia.pdf}\\
+Fac. Cs. Exactas y Naturales, UBA, 2009.
+
+
+\bibitem{}
+B. Charlot; \emph{La epistemología implícita en las prácticas de enseñanza de las matemáticas 
+};\\
+%\url{https://bibliotecadigital.exactas.uba.ar/download/libro/libro_n0006_RolandoGarcia.pdf}\\
+Cannes, 1986.
+  
+
+
+\end{thebibliography}
+
+
+
+
+\end{document}
